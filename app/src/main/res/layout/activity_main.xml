@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context="ir.hugenet.hugenetshop.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="#006680"
+        app:contentInsetStart="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ir.hugenet.hugenetshop.CustomViews.TextViewIranSans
+        android:id="@+id/iranSansMediumTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HugeNet Shop"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/ic_search"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/ic_shopping_cart"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.ss.bottomnavigation.BottomNavigation
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="#006680"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_item_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_icon="@drawable/ic_home"
+            app:tab_text="خانه" />
+
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_item_category"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_icon="@drawable/ic_category"
+            app:tab_text="دسته‌بندی ها" />
+
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_item_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_icon="@drawable/ic_profile"
+            app:tab_text="پروفایل" />
+
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_item_more"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_icon="@drawable/ic_more"
+            app:tab_text="بیشتر" />
+    </com.ss.bottomnavigation.BottomNavigation>
+
+    <FrameLayout
+        android:id="@+id/frame_fragment_containers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+</android.support.constraint.ConstraintLayout>

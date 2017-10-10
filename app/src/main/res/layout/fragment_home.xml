@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfdfdf"
+    android:layoutDirection="rtl">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ss.com.bannerslider.views.BannerSlider
+                android:id="@+id/banner_slider"
+                android:layout_width="match_parent"
+                android:layout_height="168dp"
+                app:defaultIndicators="circle"
+                app:indicatorSize="7dp"
+                app:interval="5000"
+                app:loopSlides="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="18dp">
+
+                <ir.hugenet.hugenetshop.CustomViews.TextViewIranSansMedium
+                    android:id="@+id/title1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="0.5"
+                    android:text="پیشنهادات ویژه" />
+
+                <cn.iwgang.countdownview.CountdownView
+                    android:id="@+id/countdownView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_weight="0.5"
+                    app:isHideTimeBackground="false"
+                    app:isShowHour="true"
+                    app:isShowMillisecond="false"
+                    app:isShowMinute="true"
+                    app:isShowSecond="true"
+                    app:isShowTimeBgDivisionLine="false"
+                    app:isTimeTextBold="false"
+                    app:suffixGravity="center"
+                    app:suffixTextColor="#3a3a3a"
+                    app:suffixTextSize="18sp"
+                    app:timeBgColor="#a1a1a1"
+                    app:timeTextColor="#ffffff"
+                    app:timeTextSize="22sp" />
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="140dp"
+                        android:layout_height="190dp"
+                        app:cardCornerRadius="3dp" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="140dp"
+                        android:layout_height="190dp"
+                        android:layout_marginRight="5dp"
+                        app:cardCornerRadius="3dp" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="140dp"
+                        android:layout_height="190dp"
+                        android:layout_marginRight="5dp"
+                        app:cardCornerRadius="3dp" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="140dp"
+                        android:layout_height="190dp"
+                        android:layout_marginRight="5dp"
+                        app:cardCornerRadius="3dp" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="140dp"
+                        android:layout_height="190dp"
+                        android:layout_marginRight="5dp"
+                        app:cardCornerRadius="3dp" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <ir.hugenet.hugenetshop.CustomViews.TextViewIranSansMedium
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:text="جدیدترین محصولات" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="140dp"
+                        android:layout_height="190dp"
+                        app:cardCornerRadius="3dp" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="140dp"
+                        android:layout_height="190dp"
+                        android:layout_marginRight="5dp"
+                        app:cardCornerRadius="3dp" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="140dp"
+                        android:layout_height="190dp"
+                        android:layout_marginRight="5dp"
+                        app:cardCornerRadius="3dp" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="140dp"
+                        android:layout_height="190dp"
+                        android:layout_marginRight="5dp"
+                        app:cardCornerRadius="3dp" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="140dp"
+                        android:layout_height="190dp"
+                        android:layout_marginRight="5dp"
+                        app:cardCornerRadius="3dp" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <ir.hugenet.hugenetshop.CustomViews.TextViewIranSansMedium
+                android:id="@+id/title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:text="پر بازدیدترین" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="140dp"
+                        android:layout_height="190dp"
+                        app:cardCornerRadius="3dp" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="140dp"
+                        android:layout_height="190dp"
+                        android:layout_marginRight="5dp"
+                        app:cardCornerRadius="3dp" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="140dp"
+                        android:layout_height="190dp"
+                        android:layout_marginRight="5dp"
+                        app:cardCornerRadius="3dp" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="140dp"
+                        android:layout_height="190dp"
+                        android:layout_marginRight="5dp"
+                        app:cardCornerRadius="3dp" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="140dp"
+                        android:layout_height="190dp"
+                        android:layout_marginRight="5dp"
+                        app:cardCornerRadius="3dp" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
